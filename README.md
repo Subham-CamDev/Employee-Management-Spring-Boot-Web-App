@@ -51,6 +51,8 @@ This project is a simple Employee Management system that allows you to create, u
     spring.datasource.password=your_password
     spring.jpa.hibernate.ddl-auto=update
     ```
+### There are two tables present in the MySQL database, one is Employee table for handling all the employee related database operations and, the other table is Users table that will contain all the user credentials.
+
 ### Run the Spring Application from your IDE 
 
 ### Access the REST API at `http://localhost:8080`.
