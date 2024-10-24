@@ -18,22 +18,26 @@ public class EmployeeService {
 	{
 		this.repo = repo;
 	}
-
+	
+	//for addition
 	public Object addEmployee(Employee emp) {
 		
 		return repo.save(emp);
 	}
-
+	
+	//for fetching all data
 	public List<Employee> getEmployee() {
 		
 		return repo.findAll();
 	}
-
+	
+	//for fetching one single data
 	public Employee getEmployeeById(int id) {
 		
 		return repo.findById(id).orElse(null);
 	}
-
+	
+	//for updating data
 	public Employee updateEmployee(int id, Employee emp) {
 		
 		Optional<Employee> emp1 = repo.findById(id);
@@ -51,27 +55,31 @@ public class EmployeeService {
 		
 		return null;
 	}
-
+	
+	//for deleting data
 	public void deleteEmployee(int id) {
 		repo.deleteById(id);
 	}
 
-
+	//for searching by first name
 	public List<Employee> searchEmployeeByFirstName(String firstName) {
 		
 		return repo.findByFirstName(firstName);
 	}
 
+	//for searching by last name
 	public List<Employee> searchEmployeeByLastName(String lastName) {
 		
 		return repo.findByLastName(lastName);
 	}
 
+	//for searching by department
 	public List<Employee> searchEmployeeByDepartment(String department) {
 		
 		return repo.findByDepartment(department);
 	}
 
+	//for searching by date of birth
 	public List<Employee> searchEmployeeByDateOfBirth(LocalDate dateOfBirth) {
 		
 		return repo.findByDateOfBirth(dateOfBirth);
