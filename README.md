@@ -46,7 +46,7 @@ This project is a simple Employee Management system that allows you to create, u
 ### Configure MySQL database in the `application.properties` file (usually located in `src/main/resources`):
 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+    spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
     spring.datasource.username=root
     spring.datasource.password=your_password
     spring.jpa.hibernate.ddl-auto=update
