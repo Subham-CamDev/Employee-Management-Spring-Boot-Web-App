@@ -16,7 +16,7 @@ This project is a simple Employee Management system that allows you to create, u
 
 - **Spring Boot**: Framework for building Java-based web applications.
 - **Hibernate**: ORM framework to interact with MySQL database.
-- **MySQL**: Database used to store employee data.
+- **MySQL**: Database used to store employee data and user credentials.
 - **Spring Security**: Used for securing the API with user authentication.
 - **Apache Tomcat**: Server used to deploy the application.
 - **Postman**: Used for API testing and generating collections of API requests.
